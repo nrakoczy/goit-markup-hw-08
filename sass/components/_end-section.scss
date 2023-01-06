@@ -1,0 +1,41 @@
+.end-section {
+  background-color: $tertiaryColorDark;
+  padding: 60px 0;
+  display: flex;
+
+  &__flex {
+    display: flex;
+  }
+
+  &__contact {
+    font-style: normal;
+    margin-top: 20px;
+  }
+
+  &__address {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: $secondaryColorWhite;
+  }
+
+  &__item {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-top: 9px;
+    transition: color 250ms $transitionTiming;
+    
+    &--mail {
+      text-decoration-line: underline;
+    }
+
+    &:is(:hover, :focus) {
+      color: $primaryColor;
+    }
+  }
+}

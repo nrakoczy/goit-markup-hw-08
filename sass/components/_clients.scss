@@ -1,0 +1,44 @@
+.clients {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__title {
+    color: #212121;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    display: block;
+    transition: border 250ms $transitionTiming;
+
+    &:is(:hover, :focus) {
+      border: 1px solid $primaryColor;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms $transitionTiming;
+  }
+
+  &__item:hover &__icon {
+    fill: $primaryColor;
+  }
+
+  &__item:focus &__icon {
+    fill: $primaryColor;
+  }
+}

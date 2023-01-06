@@ -1,0 +1,18 @@
+.logo {
+  font-size: 26px;
+  color: $primaryColor;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.131;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+
+  &__header {
+    color: $secondaryColorBlack;
+  }
+
+  &__footer {
+    color: $secondaryColorWhite;
+  }
+}

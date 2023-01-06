@@ -1,0 +1,37 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  color: $secondaryColorBlack;
+  background-color: $secondaryColorWhite;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+}

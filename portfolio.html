@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!--Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--End Google fonts links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <!-- HEADER -->
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <!-- NAVIGATION-->
+        <nav class="header__nav">
+          <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
+          <ul class="header__nav-list">
+            <li>
+              <a class="header__link" href="#">Agencja</a>
+            </li>
+            <li>
+              <a class="header__link header__link--is-active" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="header__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__menu-contact">
+          <a class="header__menu-contact-link" href="mailto:info@devstudio.com">
+            <svg class="header__menu-contact-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+          <a class="header__menu-contact-link" href="tel:+48111111111">
+            <svg class="header__menu-contact-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BUTTONS LIST-->
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="submenu">
+            <li>
+              <button class="submenu__button-text" type="button">Wszystkie</button>
+            </li>
+            <li><button class="submenu__button-text" type="button">Strony</button></li>
+            <li>
+              <button class="submenu__button-text" type="button">Aplikacje</button>
+            </li>
+            <li><button class="submenu__button-text" type="button">Dizajn</button></li>
+            <li>
+              <button class="submenu__button-text" type="button">Marketing</button>
+            </li>
+          </ul>
+
+          <!-- PROJECTS -->
+          <ul class="projects">
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img
+                    src="./images/portfolio/img1.jpg"
+                    width="370"
+                    height="294"
+                    alt="open laptop"
+                  />
+                  <div class="projects__description">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                      koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Technocrack</h3>
+                  <p class="projects__type">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img
+                    src="./images/portfolio/img2.jpg"
+                    width="370"
+                    height="294"
+                    alt="basketball graphics"
+                  />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Grafika New Orlean vs Golden Star</h3>
+                  <p class="projects__type">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img
+                    src="./images/portfolio/img3.jpg"
+                    width="370"
+                    height="294"
+                    alt="Logo of restaurant"
+                  />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Restauracja Seafood</h3>
+                  <p class="projects__type">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img
+                    src="./images/portfolio/img4.jpg"
+                    width="370"
+                    height="294"
+                    alt="headphones"
+                  />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Projekt Prime</h3>
+                  <p class="projects__type">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img src="./images/portfolio/img5.jpg" width="370" height="294" alt="two boxes" />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Projekt Boxes</h3>
+                  <p class="projects__type">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img src="./images/portfolio/img6.jpg" width="370" height="294" alt="monitor" />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Inspiration has no Borders</h3>
+                  <p class="projects__type">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img src="./images/portfolio/img7.jpg" width="370" height="294" alt="magazyn" />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Magazyn Limited Edition</h3>
+                  <p class="projects__type">Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img src="./images/portfolio/img8.jpg" width="370" height="294" alt="tag" />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Projekt LAB</h3>
+                  <p class="projects__type">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__list">
+              <figure class="projects__figure">
+                <div class="projects__photo">
+                  <img src="./images/portfolio/img9.jpg" width="370" height="294" alt="web pages" />
+                  <div class="projects__description">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
+                      repudiandae mollitia quas quibusdam aspernatur eos asperiores facere quae at
+                      obcaecati non veniam voluptates fugiat minima, cum natus laboriosam animi?
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="projects__subtitles">
+                  <h3 class="projects__name">Growing Business</h3>
+                  <p class="projects__type">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTTER  -->
+    <footer class="end-section">
+      <div class="container end-section__flex">
+        <div>
+          <a class="logo" href="./index.html"> Web<span class="logo__footer">Studio</span></a>
+          <address class="end-section__contact">
+            <ul>
+              <li>
+                <span class="end-section__address">m. Warszawa, Aleje Jerozolimskie 21</span>
+              </li>
+              <li>
+                <a
+                  class="end-section__item end-section__item--mail"
+                  href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="end-section__item" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- JOIN-US -->
+        <div class="join-us">
+          <p class="join-us__title">Dołącz do nas</p>
+          <ul class="join-us__list">
+            <li class="join-us__item">
+              <a class="join-us__icon" href="#"
+                ><svg width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="join-us__item">
+              <a class="join-us__icon" href="#"
+                ><svg width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="join-us__icon" href="#"
+                ><svg width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="join-us__item">
+              <a class="join-us__icon" href="#"
+                ><svg width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter">
+          <p class="newsletter__title">Zapisz się do newslettera</p>
+          <form name="newsletter__form" class="newsletter__form">
+            <label
+              ><input
+                type="email"
+                name="newsletter-email"
+                class="newsletter__input"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="btn btn--newsletter">
+              <span>Zapisz się</span>
+              <svg class="newsletter__icon" width="24" height="24">
+                <use href="images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
