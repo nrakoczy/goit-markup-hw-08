@@ -1,7 +1,12 @@
 .clients {
+  
+
   &__list {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+     align-items: center;
   }
 
   &__title {
@@ -22,6 +27,11 @@
     padding: 16px 32px;
     display: block;
     transition: border 250ms $transitionTiming;
+    
+    display: flex;
+    width: 100%;
+ 
+    
 
     &:is(:hover, :focus) {
       border: 1px solid $primaryColor;
@@ -41,4 +51,19 @@
   &__item:focus &__icon {
     fill: $primaryColor;
   }
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 94px;
+  }
+  .clients__list {
+    gap: 30px;
+    justify-content: space-between;
+}
 }

@@ -1,10 +1,20 @@
 .end-section {
   background-color: $tertiaryColorDark;
   padding: 60px 0;
-  display: flex;
+  
+  
+  
 
   &__flex {
-    display: flex;
+    // margin-bottom: 60px;
+    //  display: flex;
+    display: column;
+  }
+
+  &__list {
+    //  display: flex;
+     align-items: center;
+     text-align: center;
   }
 
   &__contact {
@@ -38,4 +48,15 @@
       color: $primaryColor;
     }
   }
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+.end-section {
+display: flex;
+}
 }

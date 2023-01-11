@@ -1,6 +1,6 @@
 .header {
   background-color: $secondaryColorWhite;
-  padding: 24px 0px 25px;
+  padding: 16px 0px 16px;
   border-bottom: 1px solid #ececec;
 
   &__container {
@@ -40,7 +40,7 @@
       content: '';
       position: absolute;
       display: block;
-      top: 45px;
+      top: 49px;
       width: 100%;
       height: 4px;
       background-color: $primaryColor;
@@ -51,7 +51,7 @@
       content: '';
       position: absolute;
       display: block;
-      top: 45px;
+      top: 49px;
       width: 100%;
       height: 4px;
       background-color: $primaryColor;
@@ -80,17 +80,50 @@
         color: $primaryColor;
         fill: $primaryColor;
       }
+
+      &-icon {
+        fill: currentColor;
+        padding: 0;
+        margin-right: 10px;
+        transition: fill 250ms $transitionTiming;
+      }
     }
 
-    &-icon {
-      fill: currentColor;
-      padding: 0;
-      margin-right: 10px;
-      transition: fill 250ms $transitionTiming;
+    &__nav-list &__link--is-active {
+      color: $primaryColor;
     }
   }
+}
 
-  &__nav-list &__link--is-active {
-    color: $primaryColor;
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 24px 0px 25px;
+  }
+
+ .header__nav {
+   gap: 83px;
+   &-list {
+     gap: 60px;
+   }
+ }
+
+ .header__menu-contact {
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 10px;
+ }
+
+ .header__menu-contact-link {
+   font-size: 12px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    gap: 93px;
+  }
+
+  .header__nav-list {
+    gap: 46px;
   }
 }

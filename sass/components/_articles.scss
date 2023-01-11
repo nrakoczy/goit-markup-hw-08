@@ -4,6 +4,11 @@
   padding: 0px;
   gap: 30px;
   margin-bottom: -94px;
+  flex-wrap: wrap;
+
+  &:last-child {
+    padding-bottom: 60px;
+  }
 
   &__title {
     font-weight: 700;
@@ -12,15 +17,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__list {
-    width: 270px;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    display: inline-block;
+    padding-bottom: 30px;
+    //  width: 270px;
+    //  height: 120px;
+    //  background: #f5f4fa;
+    // border-radius: 4px;
+    //  margin-bottom: 30px;
   }
 
   &__icon {
@@ -38,6 +44,21 @@
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: $tertiaryColorGray;
-    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .articles {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .articles__title {
+    text-align: left;
+  }
+
+  .articles {
+    // justify-content: space-between;
+    display: inline-block;
   }
 }

@@ -60,6 +60,13 @@
       </div>
     </header>
 
+    <!-- MOBILE MENU OPEN-->
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="mobile-menu__icon" width="40" height="40">
+        <use href="./images/icons.svg#menu-mobile-open"></use>
+      </svg>
+    </button>
+
     <!-- BUTTONS LIST-->
     <main>
       <section class="section">
@@ -87,7 +94,8 @@
                     src="./images/portfolio/img1.jpg"
                     width="370"
                     height="294"
-                    alt="open laptop"
+                    alt="Open laptop"
+                    srcset="./images/portfolio/img1@2x.jpg 2x, ./images/portfolio/img1@3x.jpg 3x"
                   />
                   <div class="projects__description">
                     <p>
@@ -110,7 +118,8 @@
                     src="./images/portfolio/img2.jpg"
                     width="370"
                     height="294"
-                    alt="basketball graphics"
+                    alt="Basketball graphics"
+                    srcset="./images/portfolio/img2@2x.jpg 2x, ./images/portfolio/img2@2x.jpg 2x"
                   />
                   <div class="projects__description">
                     <p>
@@ -134,6 +143,7 @@
                     width="370"
                     height="294"
                     alt="Logo of restaurant"
+                    srcset="./images/portfolio/img3@2x.jpg 2x, ./images/portfolio/img3@2x.jpg 2x"
                   />
                   <div class="projects__description">
                     <p>
@@ -157,6 +167,7 @@
                     width="370"
                     height="294"
                     alt="headphones"
+                    srcset="./images/portfolio/img4@2x.jpg 2x, ./images/portfolio/img4@3x.jpg 3x"
                   />
                   <div class="projects__description">
                     <p>
@@ -175,7 +186,7 @@
             <li class="projects__list">
               <figure class="projects__figure">
                 <div class="projects__photo">
-                  <img src="./images/portfolio/img5.jpg" width="370" height="294" alt="two boxes" />
+                  <img src="./images/portfolio/img5.jpg" width="370" height="294" alt="two boxes" srcset="./images/portfolio/img5@2x.jpg 2x, ./images/portfolio/img5@3x.jpg 3x"/>
                   <div class="projects__description">
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
@@ -193,7 +204,7 @@
             <li class="projects__list">
               <figure class="projects__figure">
                 <div class="projects__photo">
-                  <img src="./images/portfolio/img6.jpg" width="370" height="294" alt="monitor" />
+                  <img src="./images/portfolio/img6.jpg" width="370" height="294" alt="monitor" srcset="./images/portfolio/img6@2x.jpg 2x, ./images/portfolio/img6@3x.jpg 3x"/>
                   <div class="projects__description">
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
@@ -211,7 +222,7 @@
             <li class="projects__list">
               <figure class="projects__figure">
                 <div class="projects__photo">
-                  <img src="./images/portfolio/img7.jpg" width="370" height="294" alt="magazyn" />
+                  <img src="./images/portfolio/img7.jpg" width="370" height="294" alt="magazyn" srcset="./images/portfolio/img7@2x.jpg 2x, ./images/portfolio/img7@3x.jpg 3x"/>
                   <div class="projects__description">
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
@@ -229,7 +240,7 @@
             <li class="projects__list">
               <figure class="projects__figure">
                 <div class="projects__photo">
-                  <img src="./images/portfolio/img8.jpg" width="370" height="294" alt="tag" />
+                  <img src="./images/portfolio/img8.jpg" width="370" height="294" alt="tag" srcset="./images/portfolio/img8@2x.jpg 2x, ./images/portfolio/img8@3x.jpg 3x" />
                   <div class="projects__description">
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
@@ -247,7 +258,7 @@
             <li class="projects__list">
               <figure class="projects__figure">
                 <div class="projects__photo">
-                  <img src="./images/portfolio/img9.jpg" width="370" height="294" alt="web pages" />
+                  <img src="./images/portfolio/img9.jpg" width="370" height="294" alt="web pages" srcset="./images/portfolio/img9@2x.jpg 2x, ./images/portfolio/img9@3x.jpg 3x"/>
                   <div class="projects__description">
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam iusto
@@ -343,5 +354,64 @@
         </div>
       </div>
     </footer>
+
+    <!-- MENU BLOCK  -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="mobile-menu__icon mobile-menu__icon--close"
+          width="40"
+          height="40"
+        >
+          <use href="images/icons.svg#icon-mobile-menu-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__link">Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Kontakt</a>
+          </li>
+        </ul>
+        <div>
+          <p class="mobile-menu__tel">
+            <a href="tel:+48111111111" class="mobile-menu__tel-link"
+              >+48 111 111 111</a
+            >
+          </p>
+          <p class="mobile-menu__mail">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link"
+              >info@devstudio.com</a
+            >
+          </p>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

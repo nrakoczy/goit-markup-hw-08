@@ -1,6 +1,5 @@
 .newsletter {
-  margin-left: 78px;
-  padding-top: 12px;
+  padding-top: 60px;
 
   &__title {
     font-weight: 700;
@@ -10,6 +9,8 @@
     letter-spacing: 0.03em;
     color: $secondaryColorWhite;
     margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
   }
 
   &__form {
@@ -17,6 +18,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    flex-direction: column;
   }
 
   &__icon {
@@ -37,5 +39,15 @@
       border: 1px solid $primaryColor;
       outline: none;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-left: 78px;
+    padding-top: 12px;
   }
 }

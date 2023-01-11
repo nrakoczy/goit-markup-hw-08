@@ -1,12 +1,12 @@
 .join-us {
-  margin-left: 70px;
-  padding-top: 12px;
+  padding-top: 60px;
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     gap: 10px;
     padding: 0px;
+    justify-content: center;
   }
 
   &__title {
@@ -17,10 +17,15 @@
     letter-spacing: 0.03em;
     color: $secondaryColorWhite;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   &__item {
     line-height: 0;
+    //   display: flex;
+    // justify-content: space-between;
+    // gap: 10px;
   }
 
   &__icon {
@@ -32,6 +37,8 @@
     border: none;
     box-shadow: none;
     transition: fill 250ms $transitionTiming;
+   
+
 
     &:is(:hover, :focus) {
       background-color: $primaryColor;
@@ -39,4 +46,20 @@
       outline: none;
     }
   }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+ .join-us {
+  margin-left: 70px;
+  padding-top: 12px;
+  &__title {
+    display: inline;
+  }
+ }
 }

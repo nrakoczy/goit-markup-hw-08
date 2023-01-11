@@ -1,5 +1,6 @@
 .profession {
   margin-top: -94px;
+  display: none;
 
   &__list {
     display: flex;
@@ -29,5 +30,11 @@
     text-align: center;
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer {
+    display: block;
   }
 }
