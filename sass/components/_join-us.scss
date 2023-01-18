@@ -37,8 +37,6 @@
     border: none;
     box-shadow: none;
     transition: fill 250ms $transitionTiming;
-   
-
 
     &:is(:hover, :focus) {
       background-color: $primaryColor;
@@ -48,18 +46,15 @@
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1200px) {
- .join-us {
-  margin-left: 70px;
-  padding-top: 12px;
-  &__title {
-    display: inline;
+  .join-us {
+    margin-left: 70px;
+    padding-top: 12px;
+    &__title {
+      display: inline;
+    }
   }
- }
 }

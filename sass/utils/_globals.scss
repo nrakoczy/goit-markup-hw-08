@@ -8,6 +8,10 @@ p {
   padding: 0;
 }
 
+// * {
+//   border: 1 solid red;
+// }
+
 ul {
   list-style: none;
 }
@@ -22,7 +26,6 @@ img {
   height: auto;
 }
 
-
 body {
   color: $secondaryColorBlack;
   background-color: $secondaryColorWhite;
@@ -31,14 +34,12 @@ body {
 
 .section {
   padding: 60px 0;
- 
 }
 
 .container {
   max-width: 480px;
   margin: 0px auto;
   padding: 0 15px;
-
 }
 
 @media screen and (min-width: 768px) {
