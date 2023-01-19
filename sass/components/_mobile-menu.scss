@@ -43,18 +43,18 @@
     fill: $secondaryColorBlack;
     cursor: pointer;
     transition: fill 250ms $transitionTiming;
-  }
 
-  &__icon:hover {
-    fill: $primaryColor;
+    &:hover {
+      fill: $primaryColor;
+    }
   }
 
   &__icon--close {
     fill: $secondaryColorBlack;
-  }
 
-  &__icon--close:hover {
-    fill: $primaryColor;
+    &:hover {
+      fill: $primaryColor;
+    }
   }
 
   &__content {
@@ -92,24 +92,24 @@
 
   &__tel {
     margin-bottom: 32px;
-  }
 
-  &__tel-link {
-    font-weight: 500;
-    font-size: 34px;
-    color: $primaryColor;
-    text-decoration: none;
+    &-link {
+      font-weight: 500;
+      font-size: 34px;
+      color: $primaryColor;
+      text-decoration: none;
+    }
   }
 
   &__mail {
     margin-bottom: 64px;
-  }
 
-  &__mail-link {
-    font-weight: 500;
-    font-size: 24px;
-    color: $tertiaryColorGray;
-    text-decoration: none;
+    &-link {
+      font-weight: 500;
+      font-size: 24px;
+      color: $tertiaryColorGray;
+      text-decoration: none;
+    }
   }
 
   &__socials-item {
