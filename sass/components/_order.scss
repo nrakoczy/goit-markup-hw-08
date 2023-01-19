@@ -11,16 +11,16 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  @include desktop {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main-foto/main-foto.jpg);
-    width: 600px;
-  }
-
   @include tablet {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/main-foto/main-foto-tablet.jpg);
-    width: 600px;
+    height: 400px;
+  }
+
+  @include desktop {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-foto/main-foto.jpg);
+    height: 600px;
   }
 
   &__content {
@@ -43,43 +43,21 @@
     @include tablet {
       text-align: center;
       line-height: 1.3636;
+      margin: 118px 180px 0 180px;
     }
 
     @include desktop {
       font-size: 44px;
-      margin: 200px 60px 0;
-      text-align: center;
-      line-height: 1.3636;
+      margin: 200px 240px 0;
+      // text-align: center;
+      // line-height: 1.3636;
     }
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .order__title {
-//     text-align: center;
-//     line-height: 1.3636;
-//   }
-//   .order {
-//     height: 600px;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .order {
-//     height: 600px;
-//   }
-//   .order__title {
-//     font-size: 44px;
-//     margin: 200px 60px 0;
-//     text-align: center;
-
-//     line-height: 1.3636;
-//   }
-// }
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main-foto/main-foto2x.jpg);
+      url(../images/main-foto/main-foto@2x.jpg);
   }
 }

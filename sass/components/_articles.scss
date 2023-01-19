@@ -5,6 +5,21 @@
   gap: 30px;
   margin-bottom: -94px;
   flex-wrap: wrap;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
 
   &:last-child {
     padding-bottom: 60px;
@@ -18,15 +33,29 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__list {
     padding-bottom: 30px;
-    //  width: 270px;
-    //  height: 120px;
-    //  background: #f5f4fa;
-    // border-radius: 4px;
-    //  margin-bottom: 30px;
+
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+      display: inline-block;
+      width: 270px;
+      height: 120px;
+      gap: 30px;
+    }
   }
 
   &__icon {
@@ -44,21 +73,9 @@
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: $tertiaryColorGray;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .articles {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .articles__title {
-    text-align: left;
-  }
-
-  .articles {
-    // justify-content: space-between;
-    display: inline-block;
+    @include desktop {
+      //  padding-bottom: 60px;
+    }
   }
 }

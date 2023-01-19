@@ -7,15 +7,27 @@
   }
 
   &__flex {
-    // margin-bottom: 60px;
-    //  display: flex;
     display: column;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__list {
-    //  display: flex;
     align-items: center;
     text-align: center;
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__contact {
@@ -50,12 +62,3 @@
     }
   }
 }
-
-// @media screen and (min-width: 768px) {
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .end-section {
-//     display: flex;
-//   }
-// }

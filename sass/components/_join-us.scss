@@ -1,12 +1,19 @@
 .join-us {
   padding-top: 60px;
 
+  @include tablet {
+    padding-top: 0;
+  }
+
   &__list {
     display: flex;
-    // justify-content: space-between;
     gap: 10px;
     padding: 0px;
     justify-content: center;
+
+    @include desktop {
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -23,9 +30,6 @@
 
   &__item {
     line-height: 0;
-    //   display: flex;
-    // justify-content: space-between;
-    // gap: 10px;
   }
 
   &__icon {

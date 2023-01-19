@@ -3,12 +3,12 @@
   padding: 16px 0px 16px;
   border-bottom: 1px solid #ececec;
 
-  @include desktop {
-    padding: 24px 0px 25px;
-  }
-
   @include tablet {
     padding: 21px 0px 21px;
+  }
+
+  @include desktop {
+    padding: 24px 0px 25px;
   }
 
   &__container {
@@ -20,87 +20,93 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 93px;
+    gap: 83px;
 
-    @include tablet {
-      gap: 83px;
+    @include desktop {
+      gap: 93px;
+    }
 
-      &-list {
-        display: flex;
+    &-list {
+      display: flex;
+      gap: 60px;
+
+      @include desktop {
         gap: 46px;
-
-        @include tablet {
-          gap: 60px;
-        }
       }
     }
+  }
 
-    &__link {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      position: relative;
-      transition: color 250ms $transitionTiming;
-      color: $secondaryColorBlack;
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    transition: color 250ms $transitionTiming;
+    color: $secondaryColorBlack;
 
-      &:is(:hover, :focus) {
-        color: $primaryColor;
-      }
-
-      &:hover::after,
-      &:focus::after {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 45px;
-        width: 100%;
-        height: 4px;
-        background-color: $primaryColor;
-        border-radius: 2px;
-      }
-
-      &--is-active::after {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 45px;
-        width: 100%;
-        height: 4px;
-        background-color: $primaryColor;
-        border-radius: 2px;
-        color: $primaryColor;
-      }
+    &:is(:hover, :focus) {
+      color: $primaryColor;
     }
 
-    &__menu-contact {
+    &:hover::after,
+    &:focus::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 4px;
+      background-color: $primaryColor;
+      border-radius: 2px;
+    }
+
+    &--is-active::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 45px;
+      width: 100%;
+      height: 4px;
+      background-color: $primaryColor;
+      border-radius: 2px;
+      color: $primaryColor;
+    }
+  }
+
+  &__menu-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+
+    @include desktop {
       display: flex;
       gap: 50px;
       align-items: center;
+      flex-direction: row;
+    }
 
-      @include tablet {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+    &-link {
+      font-size: 12px;
+      color: $tertiaryColorGray;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-decoration-line: none;
+      display: flex;
+      transition: color 250ms $transitionTiming;
+
+      @include desktop {
+        font-size: 14px;
       }
 
-      &-link {
-        font-size: 14px;
-        color: $tertiaryColorGray;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.02em;
-        text-decoration-line: none;
-        display: flex;
-        transition: color 250ms $transitionTiming;
-
-        &:is(:hover, :focus) {
-          color: $primaryColor;
-          fill: $primaryColor;
-        }
+      &:is(:hover, :focus) {
+        color: $primaryColor;
+        fill: $primaryColor;
       }
     }
 
@@ -114,48 +120,5 @@
 
   &__nav-list &__link--is-active {
     color: $primaryColor;
-  }
-}
-
-// @media screen and (min-width: 768px) and (max-width: 1200px) {
-//   .header {
-//     padding: 24px 0px 25px;
-//   }
-
-//   .header__nav {
-//     gap: 83px;
-//     &-list {
-//       gap: 60px;
-//     }
-//   }
-
-//   .header__menu-contact {
-//     flex-direction: column;
-//     align-items: flex-start;
-//     gap: 10px;
-//   }
-
-//   .header__menu-contact-link {
-//     font-size: 12px;
-//   }
-// }
-
-//   .header__nav {
-//     gap: 93px;
-//   }
-
-//   .header__nav-list {
-//     gap: 46px;
-//   }
-// }
-
-.some-class {
-  /* mobile first styles */
-  @include tablet {
-    /* styles for tablet */
-  }
-
-  @include desktop {
-    /* styles for desktop */
   }
 }

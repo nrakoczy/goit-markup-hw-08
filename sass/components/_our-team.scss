@@ -2,6 +2,10 @@
   background-color: #f5f4fa;
   padding-top: 60px;
 
+  @include desktop {
+    padding-top: 94px;
+  }
+
   &__title {
     font-size: 36px;
     line-height: 1.17;
@@ -15,10 +19,17 @@
   &__list {
     display: flex;
     text-align: center;
-    list-style: none;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
+
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
@@ -27,6 +38,10 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $secondaryColorWhite;
     width: 100%;
+
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
   &__photo {
@@ -35,6 +50,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @include desktop {
+    margin: 0;
+    display: block;
   }
 
   &__description-name {
@@ -76,16 +96,5 @@
       fill: $secondaryColorWhite;
       outline: none;
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .articles {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-team__list {
-    justify-content: center;
   }
 }

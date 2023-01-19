@@ -1,6 +1,11 @@
 .newsletter {
   padding-top: 60px;
 
+  @include desktop {
+    margin-left: 78px;
+    padding-top: 12px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -11,6 +16,10 @@
     margin-bottom: 20px;
     justify-content: center;
     display: flex;
+
+    @include desktop {
+      justify-content: left;
+    }
   }
 
   &__form {
@@ -19,6 +28,10 @@
     align-items: center;
     gap: 12px;
     flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &__icon {
@@ -26,28 +39,22 @@
   }
 
   &__input {
-    width: 358px;
-    height: 50px;
+    // height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     color: var(--brand-color-white);
     border-radius: 4px;
     padding: 15px 16px;
     transition: border 250ms $transitionTiming;
+    width: min(93.75vw, 28.125rem);
+
+    @include desktop {
+      width: 358px;
+    }
 
     &:is(:hover, :focus) {
       border: 1px solid $primaryColor;
       outline: none;
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
-  .newsletter {
-    margin-left: 78px;
-    padding-top: 12px;
   }
 }
