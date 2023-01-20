@@ -7,10 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
-
-    @include tablet {
-    }
+    justify-content: center;
 
     @include desktop {
       display: inline-flex;
