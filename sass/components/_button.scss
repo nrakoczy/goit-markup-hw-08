@@ -26,12 +26,21 @@
     gap: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 10px;
+
+    @include desktop {
+       margin-top: 0px;
+    }
   }
 
   &--modal {
     padding: 10px 76px;
-    margin: 31px 125px 40px;
+  display: block;
+     margin: 31px auto;
     transition: box-shadow 250ms $transitionTiming;
+
+    @include desktop {
+       margin: 30px auto;
+    }
 
     &:is(:hover, :focus) {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -39,15 +48,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-}
 
-@media screen and (min-width: 1200px) {
-  .btn--newsletter {
-    margin-top: 0px;
-  }
 
-  .btn--modal {
-    margin: 30px 164px 40px;
-  }
-}
+

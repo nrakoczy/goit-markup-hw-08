@@ -28,7 +28,7 @@
   transition: transform 1s ease;
 
   @include desktop {
-    width: 528px;
+    max-width: 528px;
   }
 
   .backdrop.backdrop--is-hidden & {
@@ -110,18 +110,22 @@
   }
 
   &__checkbox {
-    display: flex;
     position: relative;
     gap: 8px;
-    margin-top: 20px;
-    margin-left: 40px;
     font-size: 12px;
     line-height: 1.2;
     color: $tertiaryColorGray;
+    display: flex;
+    padding: 20px 40px 0;
+   
+    flex-wrap: wrap;
+    align-items: flex-end;
 
     @include desktop {
-      margin-left: 55px;
       font-size: 14px;
+      padding: 0px;
+      margin-top: 20px;
+      margin-left: 54px;
     }
 
     &--hidden {
@@ -140,9 +144,18 @@
 
   &__custom-checkbox-img {
     position: absolute;
-    top: -2px;
+    top: -1.5px;
     left: -2px;
     opacity: 0;
+
+    @include tablet {
+      left: -2px;
+    }
+
+     @include desktop {
+     left: -1px;
+   }
+
   }
 
   &__checkbox--hidden:checked + &__custom-checkbox > &__custom-checkbox-img {

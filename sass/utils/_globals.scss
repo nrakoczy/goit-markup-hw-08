@@ -21,9 +21,13 @@ svg {
 }
 
 img {
-  vertical-align: middle;
-  max-width: 100%;
+  display: block;
+  width: 100%;
   height: auto;
+}
+
+figure {
+  margin: 0;
 }
 
 body {

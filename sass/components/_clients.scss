@@ -36,6 +36,7 @@
     padding: 16px 32px;
     display: block;
     transition: border 250ms $transitionTiming;
+    text-align: center;
 
     @include tablet {
       width: 226px;
